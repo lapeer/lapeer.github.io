@@ -58,10 +58,9 @@ body {
 	flex-wrap: wrap;
 	padding: 5px;
 	gap: 5px;
-
 	/* container background pattern */
 	background-color: var(--gradientBottom);
-	background-image: url('images/STScI-01H1CHD6B2VRQSQ9HZTFMAPQ4X.png');
+	background-image: url('images/dithered_jwst.png');
 	/*background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, var(--gradientBottom) 9px ), repeating-linear-gradient( var(--bg), var(--bg)); */
 }
 /* these control the column widths */
@@ -79,6 +78,7 @@ header {
 	border: 2px ridge var(--border);
 	border-radius: 5px;
 	position: relative;
+	
 }
 header span {
 	font-size: 2.5rem;
@@ -92,6 +92,7 @@ header span {
 		1px -1px var(--accent),
 		-1px -1px var(--accent);
 	color: var(--gradientTop);
+	filter: blur(0.3px);	
 }
 
 
