@@ -79,7 +79,7 @@ container {
     height: 100%;
     overflow: auto;
     padding: 20px;
-    background-image: url('sparkle-bg.gif'); /* F2U background provided by https://sadgrl.online/webmastery/downloads/tiledbgs */
+    background-image: url('dithered_jwst.png'); /* F2U background provided by https://sadgrl.online/webmastery/downloads/tiledbgs */
     font-family: 'IMFell';
     font-size: 16px;
     color: white;
@@ -87,11 +87,12 @@ container {
 
 #c_widget button, #c_widget input[type=submit] {
     padding: 4px;
-    font-family: 'Courier New';
+    font-family: 'IMFell';
     text-decoration: none;
 	text-align: center;
     text-transform: uppercase;
-    background-color: black;
+    background-color: var(--gradientBottom);
+    /* background-color: black; */
     color: #B766FF;
     border: 1px solid white;
 }
@@ -110,6 +111,7 @@ container {
     margin-bottom: 15px;
     padding: 10px;
     background-color: black;
+    background-color: var(--gradientBottom);
     border: 2px solid white;
 }
 
@@ -122,6 +124,7 @@ container {
     font-weight: bold;
     text-align: center;
     background-color: #2D0B52;
+    background-color: var(--gradientBottom);
 }
 
 .c-inputWrapper {

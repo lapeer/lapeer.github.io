@@ -64,7 +64,7 @@ body {
 
 
 .container {
-	max-width: 65rem;
+	max-width: 75rem;
 	margin: 5vw auto 12px auto;
 	border: 6px ridge var(--border);
 	outline: 3px solid var(--gradientTop);
@@ -80,7 +80,7 @@ body {
 	/*background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, var(--gradientBottom) 9px ), repeating-linear-gradient( var(--bg), var(--bg)); */
 }
 /* these control the column widths */
-.small { flex: 1 1 9%; }
+.small { flex: 1 1 25%; }
 .large { flex: 1 1 82%; }
 .full { flex: 1 1 100%; }
 .half { flex: 1 1 49%; }
@@ -124,6 +124,8 @@ nav div {
 	margin: 5px 5px 10px 5px;
 }
 nav a {
+
+	font-family: "IMFell";
 	display: block;
 	margin: 5px;
 	background: linear-gradient(to right,var(--bg),var(--gradientBottom));
