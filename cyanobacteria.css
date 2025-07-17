@@ -12,7 +12,21 @@
 	}
 /* end light mode styling */
 
+@font-face {
+	font-family: "TYPE"; 
+	src: url('dump/OldNewspaperTypes.woff2') format('woff2');
+  }
 
+  @font-face {
+	font-family: "IMFell"; 
+	src: url('dump/IM_Fell_Great_Primer/IMFellGreatPrimer-Regular.ttf') format('truetype');
+  }
+
+
+  @font-face {
+	font-family: "IBM"; 
+	src: url('dump/Px437_IBM_PS-55_re.ttf') format('truetype');
+  }
 /* start dark mode styling */
 	@media (prefers-color-scheme: dark) {
 		:root {
@@ -35,20 +49,22 @@
 	box-sizing: border-box;
 }
 body {
+	cursor: url("dump/nat606.cur"), auto;
 	padding: 10px;
 	font-family: 'MS PGothic', serif;
 	color: var(--text);
 
 	/* page background pattern */
-	background-color: var(--gradientTop);
+	background-image: url(images/phangsdither.png);
+	/*background-color: var(--gradientTop);
 	 background-image:  linear-gradient(30deg, var(--bg) 12%, transparent 12.5%, transparent 87%, var(--bg) 87.5%, var(--bg)), linear-gradient(150deg, var(--bg) 12%, transparent 12.5%, transparent 87%, var(--bg) 87.5%, var(--bg)), linear-gradient(30deg, var(--bg) 12%, transparent 12.5%, transparent 87%, var(--bg) 87.5%, var(--bg)), linear-gradient(150deg, var(--bg) 12%, transparent 12.5%, transparent 87%, var(--bg) 87.5%, var(--bg)), linear-gradient(60deg, var(--bg) 25%, transparent 25.5%, transparent 75%, var(--bg) 75%, var(--bg)), linear-gradient(60deg, var(--bg) 25%, transparent 25.5%, transparent 75%, var(--bg) 75%, var(--bg)); 
 	background-size: 20px 35px;
-	background-position: 0 0, 0 0, 10px 18px, 10px 18px, 0 0, 10px 18px;
+	background-position: 0 0, 0 0, 10px 18px, 10px 18px, 0 0, 10px 18px; */
 }
 
 
 .container {
-	max-width: 55rem;
+	max-width: 65rem;
 	margin: 5vw auto 12px auto;
 	border: 6px ridge var(--border);
 	outline: 3px solid var(--gradientTop);
@@ -81,7 +97,7 @@ header {
 	
 }
 header span {
-	font-size: 2.5rem;
+	font-size: 4rem;
 	position: absolute;
 	bottom: 0;
 	right: 10px;
@@ -152,6 +168,11 @@ footer a {
 h1, h2, h3, h4, h5, h6, p  { 
 	margin: 5px;
 	line-height: 1.2;
+}
+
+p {
+
+	font-size: large;	
 }
 h1 { 
 	font-size: 1.4rem;

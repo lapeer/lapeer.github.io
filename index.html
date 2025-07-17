@@ -1,32 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title> drew lapeer</title>
+	<title> drew lapeer - homepage</title>
 	<link href="cyanobacteria.css" rel="stylesheet" type="text/css" media="all">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
 </head>
 <body>
 
+
+<script>
+	function displayCurrentTime() {
+	  const now = new Date();
+	  const options = { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true };
+	  const currentTime = now.toLocaleTimeString('en-US', options); // Using en-US for standard format
+	  document.getElementById('localTime').textContent = currentTime;
+	}
+	
+	// Update the time every second
+	setInterval(displayCurrentTime, 1000);
+	
+	// Display the time immediately when the page loads
+	displayCurrentTime();
+	</script>
+
 	<div class="container">
 
 		<header>
-			<span>drew lapeer</span>
+			<span style="font-family: IMFell;">drew lapeer</span>
 			
 		</header>
 		
 		<div class="small">
+			<h1><strong>directory</strong></h1>
 			<nav>
-				<div>directory</div>
-
+				<div style="font-family: IMFell;">professional</div>
+				<a href="Drew_Lapeer_CV-1.pdf">curriculum vitae</a>
 				<a href = "research.html">research</a>
 				<a href ="outreach.html">outreach</a>
 				<a href ="teaching.html">teaching</a>
 				<a href = "resources.html" >resources</a>
-				<a href="archives.html">course archives</a>
-				<a href = "personal.html">personal</a>
-				<a href ="blog.html">blog</a>
-				<a href="photo.html">photo book</a>
+				<a href="contact.html">contact</a>
+
+			</nav>
+			<nav>
+				<div style="font-family: IMFell;">personal</div>
+				<a href="blog.html">blog</a>
+				<a href="'photo.html">photography</a>
 
 			</nav>
 			<a href="portal.html"> <img src="images/3dgifmaker92143.gif" width = "150"></a>
@@ -35,37 +55,53 @@
 			<a href="https://arxiv.org/list/astro-ph/new"> <img src="images/button(2).png" width = "150"></a>
 			 <a href = "https://www.youtube.com/watch?v=QdtmlfLFgWg"> <img src="images/18.gif"> </a> -->
 		</div>
+
 		
 		<section class="half">
-			<h1>welcome to my website!</h1>
-			<h2>about me:</h2>
+			<h1 style="font-family:IMFell;">welcome to my homepage!</h1>
+			<div>
+			<img src="images/slowwobblehead.gif" width="350pix" style="float: left; 
+			margin: 1px; transform:rotate(-8deg);">
 
-			<p>
-				i am a first year astrophysics phd student at the <a href = 'https://www.umass.edu/astronomy/'>
-					university of massachusetts amherst </a>
-			</p>
-			<p> &nbsp </p>
-			<p>my general research interests are:</p>
-			<ul>
-				<li>how galaxies evolve over cosmic time </li>
-				<li>co-evolution of galaxies and supermassive black holes</li>
-				<li>feedback in the galactic ecosystem</li>
-			</ul>
-			<p>i am currently working with professor <a href="https://en.wikipedia.org/wiki/Daniela_Calzetti">daniela calzetti</a> on understanding the feedback produced by star clusters in the early stages of their life.</p>
-			<p> &nbsp </p>
-			<p>you can find my CV <a href="Drew_Lapeer_CV-1.pdf"> here </a> and my publication list <a href="https://ui.adsabs.harvard.edu/search/fl=identifier%2C%5Bcitations%5D%2Cabstract%2Cauthor%2Cbook_author%2Corcid_pub%2Cpublisher%2Corcid_user%2Corcid_other%2Cbibcode%2Ccitation_count%2Ccomment%2Cdoi%2Cid%2Ckeyword%2Cpage%2Cproperty%2Cpub%2Cpub_raw%2Cpubdate%2Cpubnote%2Cread_count%2Ctitle%2Cvolume%2Cdatabase%2Clinks_data%2Cesources%2Cdata%2Ccitation_count_norm%2Cemail%2Cdoctype&fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq_database=(database%3Aastronomy%20OR%20database%3Aphysics)&q=%20author%3A%22Lapeer%22&rows=25&sort=date%20desc%2C%20bibcode%20desc&start=0&p_=0"> here.</a></p>
-			<p> &nbsp </p>
-			<p><strong>contact info:</strong></p>
-			<p>dlapeer (at) umass.edu <br> University of Massachusetts Department of Astronomy <br>
-				LGRT B532A <br>
-				710 North Pleasant Street <br>
-				Amherst, MA 01003-9305</p>
-		</section>
+<p> &nbsp </p>
+
+			<p style="font-family:IMFell; text-indent: 25px;">
+				my name is <strong><em>DREW</em></strong>! i'm a second year astrophysics 
+					 ph.d. student at the  <a href = 'https://www.umass.edu/astronomy/'>
+					university of massachusetts amherst </a>, among many other things. my origins lie in the midwest 
+					(michigan), but i now reside in western massachusetts.
+					if i'm not spending too much time on science i'm likely reading, hiking, climbing, thrifting, 
+					or causing mischief. 
+				</p>
+				<p> &nbsp </p>
+			<p style="font-family:IMFell; text-indent: 25px;">
 				
-		<!-- <section class="small">
-			<h2>another section</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut iaculis orci at sodales convallis. Proin luctus vehicula dolor, id ultrices diam eleifend eu. Donec tincidunt tellus tellus, in maximus lorem fermentum ac. Phasellus sagittis nisi in ante pretium, eget molestie est pellentesque. Ut tincidunt ultricies porta.</p>
-		</section>-->
+
+					this website serves as a facet of my professional presence, and 
+				a personal archive of resources, ideas, and projects. you can reach 
+				me for professional or personal reasons through my <a href="contact.html">contact page</a>.
+				the directory on the left likely contains anything you may be looking for. 
+
+				<br><br>(NOTE: most of this site is currently under construction!)
+			</p>
+		</section>
+
+
+		<section class="small">
+			<!-- begin wwww.htmlcommentbox.com -->
+			 <div id="c_widget"> </div>
+			 <script src="comment-widget-dark/comment-widget.js"></script> 
+			</section>
+
+		 <!-- <section class="small">
+			<nav> 
+				
+				<a href="https://lapeer.atabook.org/">sign my guest book!</a>
+			</nav>
+			<a href="https://public-archive.web.cern.ch/en/About/BasicScience3-en.html"> <img src="images/thriftstores.gif" width = "160"></a>
+			<a href="https://public-archive.web.cern.ch/en/About/BasicScience3-en.html"> <img src="images/stargazer.gif" width = "160"></a>
+
+		</section> -->
 		
 		<!-- <section class="full">
 			<h2><a href="Drew_Lapeer_CV-1.pdf"> curriculum vitae</a></h2> <br> <h2><a href="https://ui.adsabs.harvard.edu/search/fl=identifier%2C%5Bcitations%5D%2Cabstract%2Cauthor%2Cbook_author%2Corcid_pub%2Cpublisher%2Corcid_user%2Corcid_other%2Cbibcode%2Ccitation_count%2Ccomment%2Cdoi%2Cid%2Ckeyword%2Cpage%2Cproperty%2Cpub%2Cpub_raw%2Cpubdate%2Cpubnote%2Cread_count%2Ctitle%2Cvolume%2Cdatabase%2Clinks_data%2Cesources%2Cdata%2Ccitation_count_norm%2Cemail%2Cdoctype&fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq_database=(database%3Aastronomy%20OR%20database%3Aphysics)&q=%20author%3A%22Lapeer%22&rows=25&sort=date%20desc%2C%20bibcode%20desc&start=0&p_=0"> publications</a></h2>
@@ -79,15 +115,25 @@
 		<!-- <section class="half">
 			<h2><a href="https://drive.google.com/drive/folders/1-y9zD2MzJonihh3ABsOtKDvVTf6TBRba?usp=sharing"> Grad School Application Guide</a></h2>
 		</section> -->
-		<section class="full" style="text-align: center;">
+		<!-- <section class="full" style="text-align: center;">
 			<a href="https://public-archive.web.cern.ch/en/About/BasicScience3-en.html"> <img src="images/mindkiller.gif" width = "125"></a>
 			<a href="https://arxiv.org/list/astro-ph/new"> <img src="images/button(7).png" width = "125"></a>
 			<a href="Drew_Lapeer_CV-1.pdf"><img src="images/button(6).png" width = "125"></a>
 			<a href="https://ui.adsabs.harvard.edu/search/fl=identifier%2C%5Bcitations%5D%2Cabstract%2Cauthor%2Cbook_author%2Corcid_pub%2Cpublisher%2Corcid_user%2Corcid_other%2Cbibcode%2Ccitation_count%2Ccomment%2Cdoi%2Cid%2Ckeyword%2Cpage%2Cproperty%2Cpub%2Cpub_raw%2Cpubdate%2Cpubnote%2Cread_count%2Ctitle%2Cvolume%2Cdatabase%2Clinks_data%2Cesources%2Cdata%2Ccitation_count_norm%2Cemail%2Cdoctype&fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq_database=(database%3Aastronomy%20OR%20database%3Aphysics)&q=%20author%3A%22Lapeer%22&rows=25&sort=date%20desc%2C%20bibcode%20desc&start=0&p_=0"><img src="images/button(5).png" width = "125"></a>
 			<a href="https://www.savechandra.org/"><img src="images/button(8).png" width = "125"></a>
 			<a href="https://sites.google.com/umich.edu/astro-dei"> <img src="images/button(9).png" width = "125"></a>
+		</section> -->
+		<section class="full" style = "text-align: center;"> 
+			<a href="https://public-archive.web.cern.ch/en/About/BasicScience3-en.html"> <img src="images/mindkiller.gif" width = "125"></a>
+			<a href="https://public-archive.web.cern.ch/en/About/BasicScience3-en.html"> <img src="images/thismachinekills.png" width = "125"></a>
+			<a href="https://public-archive.web.cern.ch/en/About/BasicScience3-en.html"> <img src="images/drainbutton.png" width = "125"></a>
+
+
+
 		</section>
 	</div>
+
+	
 
 	<footer>
 		<!-- <span><img src="images/blinkiesCafe-2T.gif" width = "250"></span> -->
