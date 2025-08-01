@@ -1,5 +1,5 @@
 /* start light mode styling */
-	:root {
+/*	:root {
 		--text: darkslategrey;
 		--border: lightgrey;
 		--accent: teal;
@@ -11,7 +11,22 @@
 		background: url('***light mode banner image***');
 	}
 /* end light mode styling */
+/* start dark mode styling */
 
+	:root {
+		--text:  #d1cdd3;
+		--border: black;
+		--accent: #d797e2;
+		--bg:  #726e73 ;
+		--gradientBottom: rgb(65, 58, 70, .6);
+		--gradientTop: rgb(37, 35, 40);
+		a:link { color: rgb(213, 173, 230); }
+	}
+	header {
+		background: url('***dark mode banner image***');
+	}
+
+/* end dark mode styling */
 @font-face {
 	font-family: "TYPE"; 
 	src: url('dump/OldNewspaperTypes.woff2') format('woff2');
@@ -27,22 +42,6 @@
 	font-family: "IBM"; 
 	src: url('dump/Px437_IBM_PS-55_re.ttf') format('truetype');
   }
-/* start dark mode styling */
-	@media (prefers-color-scheme: dark) {
-		:root {
-			--text:  #d1cdd3;
-			--border: black;
-			--accent: #d797e2;
-			--bg:  #726e73 ;
-			--gradientBottom: rgb(65, 58, 70);
-			--gradientTop: rgb(37, 35, 40);
-			a:link { color: rgb(213, 173, 230); }
-		}
-		header {
-			background: url('***dark mode banner image***');
-		}
-	}
-/* end dark mode styling */
 
 
 * { 
@@ -423,5 +422,48 @@ a:visited {
     position: relative;
 	flex: 1 1 60%; 
   }
+
+
+.wave-text span {
+    display: inline-block;
+    font-size: 4rem;
+    animation: wave 2s ease-in-out infinite;
+}
+
+.wave-text span:nth-child(1) {
+    animation-delay: 0s;
+}
+.wave-text span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.wave-text span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+.wave-text span:nth-child(4) {
+    animation-delay: 0.6s;
+}
+.wave-text span:nth-child(5) {
+    animation-delay: 0.8s;
+}
+.wave-text span:nth-child(6) {
+    animation-delay: 1s;
+}
+.wave-text span:nth-child(7) {
+    animation-delay: 1.2s;
+}
+.wave-text span:nth-child(8) {
+    animation-delay: 1.4s;
+}
+.wave-text span:nth-child(9) {
+    animation-delay: 1.6s;
+}
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
   /*.imgtxt:hover img, .imgtxt:focus img {
 	/* add hover effects like transform or filter to your images here! */
