@@ -467,3 +467,25 @@ a:visited {
 }
   /*.imgtxt:hover img, .imgtxt:focus img {
 	/* add hover effects like transform or filter to your images here! */
+
+.typewriter h1 {
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+	border-right: .15em solid rgba(163, 129, 198, 0); /* The typwriter cursor */
+	white-space: nowrap; /* Keeps the content on a single line */
+	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+	letter-spacing: .15em; /* Adjust as needed */
+	animation: 
+		typing 3.5s steps(40, end)
+	}
+	
+	/* The typing effect */
+	@keyframes typing {
+	from { width: 0 }
+	to { width: 100% }
+	}
+	
+	/* The typewriter cursor effect */
+	@keyframes blink-caret {
+	from, to { border-color: transparent }
+	50% { border-color:  rgba(163, 129, 198, 0.195); }
+	}
